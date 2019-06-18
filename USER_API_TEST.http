@@ -1,0 +1,79 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection).
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+
+GET http://localhost:8080/api/users
+Accept: application/json
+
+###
+
+GET http://localhost:8080/api/users/account/test
+Accept: application/json
+
+###
+
+POST http://localhost:8080/api/users/register
+Content-Type: application/json
+
+{
+  "account": "test",
+  "password": "test",
+  "name": "test",
+  "email": "test@gmail.com",
+  "phone": "010-1111-2222",
+  "zip": "1111-1111",
+  "tel": "02-1111-1111",
+  "addr": "서울특별시 OO구 OO동 OO로 1길"
+}
+
+###
+
+POST http://localhost:8080/api/users/register
+Content-Type: application/json
+
+{
+  "account": "test2",
+  "addr": "etes",
+  "email": "test@gmail.com",
+  "name": "test",
+  "password": "test",
+  "phone": "test",
+  "tel": "test",
+  "zip": "test"
+}
+
+###
+
+POST http://localhost:8080/api/users/login
+Content-Type: application/json
+
+{
+  "account": "test",
+  "password": "test123"
+}
+
+###
+
+PUT http://localhost:8080/api/users/1
+Content-Type: application/json
+
+{
+  "account": "test",
+  "password": "test123",
+  "name": "test23",
+  "email": "test@gmail.com",
+  "phone": "010-1111-2222",
+  "zip": 11111,
+  "addr": "서울특별시 OO구 OO동 OO로 1길"
+}
+
+###
+
+DELETE http://localhost:8080/api/users/1
+Accept: application/json
+
+###
