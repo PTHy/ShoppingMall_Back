@@ -14,5 +14,5 @@ public class ProductType {
     @Column(nullable = false)
     private String name;
 
-    private String image;
+    private String imagePath;
 }
