@@ -1,0 +1,36 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection).
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+  "cost": 20000,
+  "name": "오픈카라 티셔츠 [BEIGE]",
+  "detailInfo": "",
+  "buyInfo": "10% (-4,200원) 할인",
+  "typeId": 1,
+  "filePath": "https://store.musinsa.com/app/product/detail/1020313/0",
+  "subTypeId": 1
+}
+
+###
+
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+  "cost": 35500,
+  "name": "로맨틱 파이어리츠",
+  "detailInfo": "",
+  "buyInfo": "",
+  "typeId": 1,
+  "filePath": "https://image.msscdn.net/images/goods_img/20190513/1042372/1042372_1_500.jpg",
+  "subTypeId": 1
+}
+
+###

@@ -17,12 +17,18 @@ public class Product {
     @Column(nullable = false)
     private Long cost;
 
+    @Column(nullable = false)
+    private String name;
+
     private String detailInfo;
 
     private String buyInfo;
 
     @Column(nullable = false)
     private Long typeId;
+
+    @Column(nullable = false)
+    private String filePath;
 
     @Column(nullable = false)
     private Long subTypeId;

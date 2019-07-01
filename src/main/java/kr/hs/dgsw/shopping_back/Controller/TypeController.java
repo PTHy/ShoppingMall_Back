@@ -18,6 +18,11 @@ public class TypeController {
         return typeService.getAllTypes();
     }
 
+    @GetMapping("/api/products/types/{id}")
+    public ProductType getType(@PathVariable Long id) {
+        return typeService.getType(id);
+    }
+
     @PostMapping("/api/products/types")
     public ProductType addType(@RequestBody ProductType type) {
         return typeService.addType(type);

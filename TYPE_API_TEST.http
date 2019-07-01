@@ -10,6 +10,72 @@ Accept: application/json
 
 ###
 
+GET http://localhost:8080/api/products/types/1
+Accept: application/json
+
+###
+
+
+POST http://localhost:8080/api/products/types
+Content-Type: application/json
+
+{
+  "name": "상의(남)",
+  "imagePath": "http://localhost:8080/public/image/test.jpg"
+}
+
+###
+
+POST http://localhost:8080/api/products/types
+Content-Type: application/json
+
+{
+  "name": "하의(남)",
+  "imagePath": "http://localhost:8080/public/image/test.jpg"
+}
+
+###
+
+POST http://localhost:8080/api/products/types
+Content-Type: application/json
+
+{
+  "name": "상의(여)",
+  "imagePath": "http://localhost:8080/public/image/test.jpg"
+}
+
+###
+
+POST http://localhost:8080/api/products/types
+Content-Type: application/json
+
+{
+  "name": "하의(여)",
+  "imagePath": "http://localhost:8080/public/image/test.jpg"
+}
+
+###
+
+POST http://localhost:8080/api/products/types
+Content-Type: application/json
+
+{
+  "name": "구두",
+  "imagePath": "http://localhost:8080/public/image/test.jpg"
+}
+
+###
+
+POST http://localhost:8080/api/products/types
+Content-Type: application/json
+
+{
+  "name": "가방",
+  "imagePath": "http://localhost:8080/public/image/test.jpg"
+}
+
+###
+
 POST http://localhost:8080/api/products/types
 Content-Type: application/json
 
@@ -19,6 +85,8 @@ Content-Type: application/json
 }
 
 ###
+
+
 
 GET http://localhost:8080/api/products/types/1/sub-types
 Accept: application/json

@@ -47,4 +47,10 @@ public class TypeServiceImpl implements TypeService{
     public ProductType addType(ProductType type) {
         return this.typeRepository.save(type);
     }
+
+    @Override
+    public ProductType getType(Long id) {
+        return this.typeRepository.findById(id)
+                .orElse(null);
+    }
 }

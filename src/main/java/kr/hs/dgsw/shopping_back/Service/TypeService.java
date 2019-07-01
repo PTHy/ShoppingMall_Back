@@ -12,4 +12,6 @@ public interface TypeService {
     boolean deleteType(Long id);
 
     ProductType addType(ProductType type);
+
+    ProductType getType(Long id);
 }

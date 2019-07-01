@@ -52,4 +52,10 @@ public class SubTypeServiceImpl implements SubTypeService{
     public List<ProductSubType> getSubTypeByType(Long typeId) {
         return this.subTypeRepository.findAllByTypeId(typeId);
     }
+
+    @Override
+    public ProductSubType getSubType(Long id) {
+        return this.subTypeRepository.findById(id)
+                .orElse(null);
+    }
 }

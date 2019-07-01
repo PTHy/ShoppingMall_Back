@@ -20,6 +20,11 @@ public class SubTypeController {
         return subTypeService.getAllSubTypes();
     }
 
+    @GetMapping("/api/products/sub-types/{id}")
+    public ProductSubType subType(@PathVariable Long id) {
+        return subTypeService.getSubType(id);
+    }
+
     @GetMapping("/api/products/types/{typeId}/sub-types")
     public List<ProductSubType> subTypesByType(@PathVariable Long typeId) {
         return subTypeService.getSubTypeByType(typeId);

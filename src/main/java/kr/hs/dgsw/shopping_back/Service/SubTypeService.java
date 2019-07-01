@@ -14,4 +14,6 @@ public interface SubTypeService {
     boolean deleteSubType(Long id);
 
     List<ProductSubType> getSubTypeByType(Long id);
+
+    ProductSubType getSubType(Long id);
 }
